@@ -1,25 +1,31 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
+.user-details {
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+
+  flex: 1;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.movies-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.user-fav-movies {
   padding: 20px;
-  text-align: center;
-  color: white;
+  background: white;
+  display: flex;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media (min-width: 600px) {
+  .user-fav-movies {
+    margin: 20px;
+    border: 1px solid #d5d8df;
+    border-radius: 4px;
+  }
 }

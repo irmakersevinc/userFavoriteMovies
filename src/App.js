@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import FavoriteMovies from './FavoriteMovies';
+import './App.css';
+
 /*
 Use React and the data below to display a list of users alongside their favorite movies.
 

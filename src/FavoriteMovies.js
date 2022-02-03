@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './App.css';
 
 class FavoriteMovies extends Component {
   //example output: Jane Cruz's favorite movie is Planet Earth 1.
@@ -13,13 +14,11 @@ class FavoriteMovies extends Component {
   }
 	render() {
       return (
-        <ol>
+        <ol className="movies-list">
           {this.props.Users && Object.keys(this.props.Users).map((person,key)=> (
-              <li key={key}>
-                  <div>
+              <li key={key} className="user-fav-movies">
+                  <div className="user-detail">
                       <p>{this.props.Users[person].name}'s favorite movie is {this.findFavoriteMovie(this.props.Users[person].id)}</p>
-  					  
-  					
                   </div>
               </li>
       		))}
